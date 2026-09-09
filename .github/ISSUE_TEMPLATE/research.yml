@@ -1,0 +1,26 @@
+name: 조사 요청
+description: 확인이 필요한 것을 남깁니다. 요금, 속도, 무료 한도, 쓸 만한 API 등.
+title: "[조사] "
+labels: ["exploring"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: 무엇을 확인해야 하나요
+      placeholder: Whisper API 무료 한도와 1분 오디오 처리 지연이 어느 정도인지
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: 왜 필요한가요
+      description: 어떤 아이디어의 실현 가능성과 걸려 있는지 적어주면 우선순위를 정하기 쉽습니다.
+    validations:
+      required: false
+  - type: input
+    id: deadline
+    attributes:
+      label: 언제까지 필요한가요
+      placeholder: 9/19까지
+    validations:
+      required: false

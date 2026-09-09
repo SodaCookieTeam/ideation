@@ -1,3 +1,11 @@
+---
+title: 아이디어 제목
+status: raw
+owner: github-아이디
+created: 2026-09-09
+tags: []
+---
+
 # 아이디어 제목
 
 ## 한 줄 요약
@@ -22,3 +30,11 @@
 
 ## 참고
 비슷한 서비스, 링크, 자료
+
+<!--
+쓰는 방법
+1. 이 파일을 ideas/YYYY-MM-DD-제목.md 로 복사합니다.
+2. 앞머리의 title, owner, created, status 를 채웁니다.
+3. 못 채운 섹션은 지우지 말고 비워둡니다. 빈 섹션이 아직 안 풀린 지점입니다.
+자세한 규칙은 ../CONVENTIONS.md 를 보세요.
+-->

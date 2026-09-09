@@ -1,0 +1,32 @@
+name: 아이디어 던지기
+description: 떠오른 생각을 가볍게 남깁니다. 한 줄이어도 괜찮습니다.
+title: "[아이디어] "
+labels: ["raw"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        다듬는 건 나중에 합니다. 별거 아닌 것 같아도 일단 올려주세요.
+        정리가 끝난 아이디어는 Issue 대신 `ideas/` 에 문서로 올리면 됩니다.
+  - type: textarea
+    id: summary
+    attributes:
+      label: 어떤 아이디어인가요
+      description: 누구의 어떤 문제를 어떻게 해결하는지 알 수 있으면 좋습니다.
+      placeholder: PDF 강의자료 읽는 데 시간이 너무 걸린다. 핵심만 뽑아주는 도구가 있으면 좋겠다.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: 왜 필요한가요
+      description: 직접 겪은 불편이면 그 상황을 적어주세요. 모르면 비워두세요.
+    validations:
+      required: false
+  - type: textarea
+    id: refs
+    attributes:
+      label: 참고
+      description: 비슷한 서비스, 링크, 자료
+    validations:
+      required: false

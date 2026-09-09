@@ -1,0 +1,11 @@
+# 마크다운 문서 저장소이므로 줄바꿈을 LF 로 통일합니다.
+# 윈도우와 맥을 섞어 쓸 때 diff 가 전체 줄로 뜨는 것을 막습니다.
+*        text=auto eol=lf
+*.md     text eol=lf
+*.yml    text eol=lf
+
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.pdf    binary
