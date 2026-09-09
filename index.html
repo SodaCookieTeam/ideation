@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>무작위성 주입기 🎲 - 일상에 카오스를 더하다</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">🎲 무작위성 주입기</h1>
+            <p class="subtitle">일상에 통제된 카오스를 추가하세요</p>
+        </header>
+
+        <!-- Main Mission Card -->
+        <div class="mission-card" id="missionCard">
+            <div class="mission-header">
+                <span class="mission-type" id="missionType">오늘의 미션</span>
+                <span class="mission-difficulty" id="missionDifficulty">⭐ 중급</span>
+            </div>
+            <div class="mission-content">
+                <h2 class="mission-title" id="missionTitle">버튼을 눌러 미션을 받으세요</h2>
+                <p class="mission-description" id="missionDescription">당신의 일상에 예측 불가능한 재미를 더해보세요!</p>
+            </div>
+            <div class="mission-footer">
+                <button class="btn-primary" id="newMissionBtn">
+                    🎲 새로운 미션 받기
+                </button>
+                <button class="btn-secondary" id="completeMissionBtn" style="display: none;">
+                    ✅ 미션 완료
+                </button>
+            </div>
+        </div>
+
+        <!-- Mission Categories -->
+        <div class="categories">
+            <h3>카테고리 선택</h3>
+            <div class="category-buttons">
+                <button class="category-btn active" data-category="all">🌟 전체</button>
+                <button class="category-btn" data-category="daily">☀️ 일상</button>
+                <button class="category-btn" data-category="social">💬 관계</button>
+                <button class="category-btn" data-category="food">🍽️ 음식</button>
+                <button class="category-btn" data-category="skill">🎨 스킬</button>
+                <button class="category-btn" data-category="adventure">🚀 모험</button>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats-section">
+            <div class="stat-card">
+                <div class="stat-number" id="totalMissions">0</div>
+                <div class="stat-label">완료한 미션</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="currentStreak">0</div>
+                <div class="stat-label">연속 달성</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="chaosLevel">0%</div>
+                <div class="stat-label">카오스 레벨</div>
+            </div>
+        </div>
+
+        <!-- Mission History -->
+        <div class="history-section">
+            <h3>미션 히스토리</h3>
+            <div class="history-list" id="historyList">
+                <p class="empty-message">아직 완료한 미션이 없습니다</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>예측 불가능한 삶을 살아보세요 🌈</p>
+        </footer>
+    </div>
+
+    <!-- Confetti Container for celebration -->
+    <div id="confettiContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
