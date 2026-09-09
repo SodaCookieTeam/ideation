@@ -31,15 +31,29 @@
 
 [`ideas/TEMPLATE.md`](ideas/TEMPLATE.md) 을 `ideas/YYYY-MM-DD-짧은-제목.md` 로 복사해서 채우고 PR을 올립니다.
 
+파일 맨 위에는 아래처럼 front-matter 로 메타데이터를 답니다. 상태(`status`)는 여기서 관리합니다.
+
+```markdown
+---
+title: 아이디어 제목
+status: raw          # raw | exploring | shortlist | parked | dropped
+owner: 깃허브핸들
+created: YYYY-MM-DD
+tags: [태그1, 태그2]
+---
+
+# 아이디어 제목
+```
+
 문서는 이 순서로 씁니다. **한 줄 요약 → 문제 → 해결 방식 → 핵심 기능 → 만들 수 있을까 → 참고.** 순서가 곧 판단 순서입니다.
 
 **빈칸은 비워둬도 됩니다.** 다 채워야 올릴 수 있는 게 아니라, 채우다 막히는 부분이 곧 더 고민해야 할 지점입니다.
 
 ## 상태 관리
 
-아이디어마다 상태를 붙입니다. Issue 에는 **라벨**로, 문서에는 앞머리의 **`status`** 로 붙이고 값은 같은 어휘를 씁니다.
+아이디어마다 상태를 붙입니다. Issue 에는 **라벨**로, 문서에는 앞머리의 front-matter **`status`** 로 붙이고 값은 같은 어휘를 씁니다.
 
-| 상태 | 뜻 |
+| status | 뜻 |
 | --- | --- |
 | `raw` | 그냥 던진 것, 아직 검토 안 함 |
 | `exploring` | 살펴보는 중 |
