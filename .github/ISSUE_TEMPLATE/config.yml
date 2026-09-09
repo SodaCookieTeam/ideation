@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 문서 규칙 보기
+    url: https://github.com/SodaCookieTeam/ideation/blob/main/CONVENTIONS.md
+    about: 파일을 어디에 넣고 어떤 형식으로 쓰는지 정리해뒀습니다.
+  - name: 올리는 절차 보기
+    url: https://github.com/SodaCookieTeam/ideation/blob/main/CONTRIBUTING.md
+    about: 브랜치, 커밋, PR, 리뷰 규칙입니다.
