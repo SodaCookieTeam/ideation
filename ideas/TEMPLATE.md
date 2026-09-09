@@ -1,3 +1,11 @@
+---
+title: 아이디어 제목
+status: raw          # raw | exploring | shortlist | parked | dropped
+owner: 깃허브핸들
+created: YYYY-MM-DD
+tags: [태그1, 태그2]
+---
+
 # 아이디어 제목
 
 ## 한 줄 요약
